@@ -1,0 +1,9 @@
+
+target/
+dbt_packages/
+logs/
+../.DS_Store
+./
+../dbt-env/
+../google-cloud-sdk/
+../logs/
