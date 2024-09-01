@@ -32,7 +32,7 @@ with source as (
         po.submitted_by,
         current_timestamp() as insertion_timestamp
     from {{ ref('stg_purchase_orders') }} po
-    left join {{ ref('stg_ purchase_order_details') }} pod
+    left join {{ ref('stg_purchase_order_details') }} pod
     on pod.purchase_order_id = po.id
     left join {{ ref('stg_products') }} p
     on p.id = pod.product_id
